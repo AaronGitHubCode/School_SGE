@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_student" model="ir.actions.act_window">
+        <field name="name">Student</field>
+        <field name="res_model">school.student</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="list_student" model="ir.ui.view">
+        <field name="name">Student</field>
+        <field name="model">school.student</field>
+        <field name="arch" type="xml">
+            <tree string="Students">
+                <field name="name" />
+                <field name="last_name" />
+                <field name="module_relation" />
+            </tree>
+        </field>
+    </record>
+
+    <menuitem id="student_section" name="Students" parent="menu_root" action="action_student" />
+</odoo>

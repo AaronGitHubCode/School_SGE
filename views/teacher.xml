@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_teacher" model="ir.actions.act_window">
+        <field name="name">Teacher</field>
+        <field name="res_model">school.teacher</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="list_teacher" model="ir.ui.view">
+        <field name="name">Teacher</field>
+        <field name="model">school.teacher</field>
+        <field name="arch" type="xml">
+            <tree string="Teachers">
+                <field name="name" />
+                <field name="last_name" />
+                <field name="module_relation" />
+            </tree>
+        </field>
+    </record>
+
+    <menuitem id="teacher_section" name="Teachers" parent="menu_root" action="action_teacher" />
+</odoo>

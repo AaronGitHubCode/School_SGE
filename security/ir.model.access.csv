@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+school_cicle,school.cicle,model_school_cicle,base.group_user,1,1,1,1
+school_module,school.module,model_school_module,base.group_user,1,1,1,1
+school_student,school.student,model_school_student,base.group_user,1,1,1,1
+school_teacher,school.teacher,model_school_teacher,base.group_user,1,1,1,1
